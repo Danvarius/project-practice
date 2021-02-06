@@ -1,0 +1,421 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* Basic color */
+
+:root {
+   --basic-white: #FFFFFF;
+   --basic-black: #303030;
+}
+
+/* Vissualy-hidden */
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+/* Basic Font */
+
+/* ubuntu-300 - latin */
+@font-face {
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 300;
+   src: local(''),
+        url('../fonts/ubuntu-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/ubuntu-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* ubuntu-regular - latin */
+ @font-face {
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 400;
+   src: local(''),
+        url('../fonts/ubuntu-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/ubuntu-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* ubuntu-500 - latin */
+ @font-face {
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 500;
+   src: local(''),
+        url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/ubuntu-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* ubuntu-700 - latin */
+ @font-face {
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 700;
+   src: local(''),
+        url('../fonts/ubuntu-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/ubuntu-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* unineuebook - 400 - latin */
+ @font-face {
+   font-family: 'UniNeueBook';
+   font-style: normal;
+   font-weight: 400;
+   src: local(''),
+        url('../fonts/UniNeueBook.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/UniNeueBook.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+/* unineuebook- 700 - latin */
+@font-face {
+   font-family: 'UniNeueBook';
+   font-style: normal;
+   font-weight: 700;
+   src: local(''),
+        url('../fonts/UniNeueBlack.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/UniNeueBlack.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* Main */
+
+.page-body {
+   min-width: 960px;
+   font-family: "Ubuntu", sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   font-style: normal;
+   line-height: 24px;
+   color: #303030;
+}
+
+.page-main {
+   display: flex;
+   flex-direction: column;
+}
+/* Main-header */
+
+.page-header {
+   background-image: url(/img/header-bg.jpg);
+   background-size: cover;
+   min-height: 800px;
+}
+
+.page-header__wrapper {
+   max-width: 940px;
+   margin: 0 auto;
+   position: relative;
+}
+
+.main-nav {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.wrapper-nav-logo {
+   margin-top: 50px;
+   margin-bottom: 80px;
+}
+
+.link-nav-logo {
+   font-family: "UniNeueBook", sans-serif;
+   font-weight: 700;
+   text-decoration: none;
+   color: var(--basic-white);
+   font-size: 30px;
+   line-height: 34px;
+   text-transform: uppercase;
+}
+
+.nav-logo {
+}
+
+.nav-list {
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 50px;
+   margin-bottom: 200px;
+   max-width: 408px;
+}
+
+.nav-list__item {
+   margin-right: 50px;
+   margin-bottom: 20px;
+}
+
+.nav-list li:nth-child(4) {
+   margin-right: 0px;
+   margin-bottom: 20px;
+}
+
+.nav-link {
+   text-decoration: none;
+   color: var(--basic-white);
+   font-size: 16px;
+   line-height: 20px;
+}
+
+.heading-wrapper {
+   text-align: center;
+   margin-bottom: 90px;
+}
+
+.general-heading {
+   color: var(--basic-white);
+   font-size: 47px;
+   line-height: 0px;
+}
+
+.general-subtitle {
+   font-weight: 100;
+   color: var(--basic-white);
+   font-size: 25px;
+   line-height: 29px;
+}
+
+.mouse-wrapper__link {
+   position: absolute;
+   top: 670px;
+   left: 450px;
+   display: block;
+   margin: 0 auto;
+   width: 37px;
+   height: 55px;
+   background-image: url(/img/Mouse-big.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+}
+
+
+/* Section-services */
+
+.section-services {
+   max-width: 940px;
+   margin: 0 auto;
+   margin-top: 130px;
+}
+
+.section-services__heading {
+   text-align: center;
+   margin-bottom: 70px;
+}
+
+.services-heading {
+   font-size: 34px;
+   line-height: 32px;
+   text-transform: uppercase;
+}
+
+.services-subtitle {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: #787878;
+}
+
+.services-line {
+   display: block;
+   margin: 0 auto;
+   margin-top: 6px;
+   width: 30px;
+   height: 2px;
+   background-color: #4A4A4A;
+}
+
+.section-services__flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.wrapper-flex {
+   width: 290px;
+   margin-right: 30px;
+}
+
+.section-services__flex div:nth-child(3) {
+   margin-right: 0px;
+}
+
+.wrapper-flex__heading {
+   font-size: 22px;
+   line-height: 26px;
+   color: #787878;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.wrapper-flex__par {
+   color: #5F5F5F;
+   font-size: 12px;
+   line-height: 16px;
+   margin-left: 12px;
+   
+}
+
+.wrapper-flex__imgone {
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 36px;
+}
+
+.wrapper-flex__imgtwo {
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 40px;
+}
+
+.wrapper-flex__imgthree {
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 34px;
+}
+
+.ling-ger {
+   font-size: 22px;
+   line-height: 26px;
+   color: var(--basic-white);
+}
+
+/* Section-works */
+
+.section-works {
+}
+
+.works-heading {
+   font-size: 16px;
+   line-height: 20px;
+   color: #787878;
+}
+
+.works-img {
+}
+
+.grid-container {
+   display: grid;
+}
+
+.grid-container__elements {
+}
+
+.grid-img {
+}
+
+
+/* Section references */
+
+.section-references {
+}
+
+.section-references__heading {
+   font-size: 16px;
+   line-height: 20px;
+   color: #787878;
+}
+
+.section-references__line {
+}
+.container-about {
+}
+.container-about__img {
+}
+.container-about__wrapper {
+}
+.about-heading {
+   font-size: 24px;
+   line-height: 28px;
+   color: #303030;
+}
+
+.about-paragrah {
+   color: #5F5F5F;
+   font-size: 12px;
+   line-height: 16px;
+}
+
+.logo-container {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.logo-container__img {
+}
+
+/* Section-contacts */
+
+.section-contacts {
+
+}
+
+.section-contacts__wrapper {
+}
+.contact-form {
+}
+
+.contacts-heading {
+   font-size: 16px;
+   line-height: 20px;
+   color: #787878;
+}
+
+.label-name {
+}
+.name-input {
+}
+.label-email {
+}
+.email-input {
+}
+.label-message {
+}
+.message-input {
+}
+.button-form {
+   font-size: 20px;
+   line-height: 24px;
+   color: #787878;
+}
+
+/* Footer */
+
+.page-footer {
+}
+.page-footer__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+}
+.footer-logo {
+}
+.footer-logo__img {
+}
+.footer-copyright {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 18px;
+   color: var(--basic-white);
+}
+.footer-link-wrapper {
+}
+.link-footer-one {
+}
+.link-footer-two {
+}
+.footer-social-wrapper {
+}
+.link-social-fc {
+}
+.link-social-tw {
+}
+.link-social-in {
+}
+.link-social-gg {
+}
+.copyright-social {
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 14px;
+   color: var(--basic-white);
+}
