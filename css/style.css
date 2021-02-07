@@ -94,6 +94,7 @@
 .page-main {
    display: flex;
    flex-direction: column;
+   overflow: hidden;
 }
 /* Main-header */
 
@@ -424,7 +425,7 @@
    margin-bottom: 60px;
    background-image: url(/img/Line-bg.svg);
    background-repeat: no-repeat;
-   background-position: 13% 63%;
+   background-position: 14% 59%;
 }
 
 .link-arrow-left {
@@ -519,83 +520,249 @@
    margin-left: 50px;
 }
 
+.logo-container img:nth-child(7) {
+   margin-left: 50px;
+}
+
 .logo-container__img {
    display: block;
    margin-left: 85px;
+   margin-bottom: 10px;
 }
 
 /* Section-contacts */
 
 .section-contacts {
-
+   background-color: #000000;
 }
 
 .section-contacts__wrapper {
+   max-width: 940px;
+   margin: 0 auto;
 }
+
 .contact-form {
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 940px;
 }
 
 .contacts-heading {
-   font-size: 16px;
-   line-height: 20px;
-   color: #787878;
+   font-size: 18px;
+   line-height: 22px;
+   font-weight: 500;
+   color: var(--basic-white);
+   text-align: center;
+   margin-top: 80px;
+   margin-bottom: 40px;
 }
 
 .label-name {
+   margin-bottom: 80px;
 }
+
 .name-input {
+   width: 450px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   background-color: #000000;
+   outline: none;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom: 1px solid #c6c6c6;
 }
+
 .label-email {
 }
+
 .email-input {
+   width: 450px;
+   margin-left: 32px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   background-color: #000000;
+   outline: none;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom: 1px solid #c6c6c6;
 }
+
 .label-message {
+   margin-bottom: 80px;
 }
+
 .message-input {
+   width: 936px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   background-color: #000000;
+   outline: none;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom: 1px solid #c6c6c6;
 }
+
 .button-form {
-   font-size: 20px;
-   line-height: 24px;
-   color: #787878;
+   font-size: 22px;
+   line-height: 26px;
+   color: var(--basic-white);
+   display: block;
+   margin: 0 auto;
+   background-color: var(--basic-black);
+   border: none;
+   padding: 15px 50px;
+   margin-bottom: 80px;
+   cursor: pointer;
 }
 
 /* Footer */
 
 .page-footer {
+   margin-top: auto;
+   background: linear-gradient(to right, #5e407b, #4a50a8);
+   padding: 50px 0;
 }
+
 .page-footer__wrapper {
    display: flex;
    flex-wrap: wrap;
+   max-width: 940px;
+   margin: 0 auto;
 }
+
 .footer-logo {
+   font-family: "UniNeueBook", sans-serif;
+   font-weight: 700;
+   text-decoration: none;
+   color: var(--basic-white);
+   font-size: 30px;
+   line-height: 34px;
+   text-transform: uppercase;
 }
-.footer-logo__img {
-}
+
 .footer-copyright {
    font-size: 14px;
    font-weight: 400;
    line-height: 18px;
    color: var(--basic-white);
+   margin-left: 150px;
 }
 .footer-link-wrapper {
+   margin-left: 150px;
+
 }
+
 .link-footer-one {
+   text-decoration: none;
+   color: white;
+   font-size: 14px;
+   line-height: 18px;
+   font-weight: 400;
+   display: block;
+   margin-bottom: 2px;
 }
+
+.link-footer-one::before {
+   content: "";
+
+   display: inline-block;
+   position: relative;
+   top: 2px;
+   margin-right: 8px;
+   width: 23px;
+   height: 15px;
+
+   background-image: url(/img/mail-icon.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: 23px 15px;
+}
+
 .link-footer-two {
+   text-decoration: none;
+   color: white;
+   font-size: 14px;
+   line-height: 18px;
+   font-weight: 400;
 }
+
+.link-footer-two::before {
+   content: "";
+
+   display: inline-block;
+   position: relative;
+   top: 2px;
+   left: 2px;
+   margin-right: 8px;
+   width: 18px;
+   height: 18px;
+
+   background-image: url(/img/phone-icon.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: 18px 18px;
+}
+
 .footer-social-wrapper {
+   margin-left: 150px;
+   width: 105px;
+   display: flex;
+   flex-wrap: wrap;
 }
+
 .link-social-fc {
+   display: block;
+   width: 9px;
+   height: 19px;
+   background-image: url(/img/fc-icon.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: 9px 19px;
+   margin-bottom: 7px;
 }
+
 .link-social-tw {
+   display: block;
+   margin-top: 1px;
+   width: 21px;
+   height: 17px;
+   background-image: url(/img/tw-icon.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: 21px 17px;
+   margin-left: 10px;
 }
+
 .link-social-in {
+   display: block;
+   width: 19px;
+   height: 19px;
+   background-image: url(/img/in-icon.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: 19px 19px;
+   margin-left: 10px;
 }
+
 .link-social-gg {
+   display: block;
+   margin-top: 3px;
+   width: 26px;
+   height: 16px;
+   background-image: url(/img/gg-icon.svg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: 26px 16px;
+   margin-left: 10px;
 }
+
 .copyright-social {
    font-weight: 400;
    font-size: 10px;
    line-height: 14px;
    color: var(--basic-white);
+   display: block;
 }
