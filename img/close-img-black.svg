@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.03" height="24.03" viewBox="0 0 24.03 24.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #616161;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        opacity: 0.48;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1386.97" y="2661.97" width="23.03" height="23.03" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#404040"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-1386.47 -2661.47)" style="fill: #fff; filter: url(#filter)">
+    <path id="Forma_1_копия" data-name="Forma 1 копия" class="cls-1" d="M1401.23,2673.49l8.21-8.21a1.937,1.937,0,1,0-2.74-2.74l-8.21,8.21-8.21-8.21a1.937,1.937,0,1,0-2.74,2.74l8.21,8.21-8.21,8.21a1.937,1.937,0,0,0,2.74,2.74l8.21-8.21,8.21,8.21a1.937,1.937,0,0,0,2.74-2.74Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-1386.47 -2661.47)" xlink:href="#Forma_1_копия" style="stroke: #616161; filter: none; fill: none"/>
+</svg>
